@@ -9,19 +9,21 @@
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@android:color/black"
-              android:orientation="vertical"
-              tools:context=".MainActivity">
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
 
-    <com.google.android.youtube.player.YouTubePlayerView
-        android:id="@+id/youtubePlayerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+    To get one, follow this link, follow the directions and press "Create" at the end:
 
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=DD:1A:16:EA:C8:CA:43:26:B0:11:D9:42:DF:4F:75:84:52:68:F4:17%3Bcom.vishnu.youtubeplayer
 
-</LinearLayout>
+    You can also add your credentials to an existing key, using this line:
+    DD:1A:16:EA:C8:CA:43:26:B0:11:D9:42:DF:4F:75:84:52:68:F4:17;com.vishnu.youtubeplayer
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        YOUR_KEY_HERE
+    </string>
+</resources>
